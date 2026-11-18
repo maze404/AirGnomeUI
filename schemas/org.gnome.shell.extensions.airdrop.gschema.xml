@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="airdrop@maze404.github.io">
+  <schema id="org.gnome.shell.extensions.airdrop" path="/org/gnome/shell/extensions/airdrop/">
+    <key name="radio-enabled" type="b">
+      <default>false</default>
+      <summary>Radio requested</summary>
+      <description>Whether the owly radio should be running.</description>
+    </key>
+    <key name="radio-state" type="s">
+      <default>'off'</default>
+      <summary>Radio state</summary>
+      <description>One of off, starting or up. Written by the extension.</description>
+    </key>
+    <key name="owly-command" type="s">
+      <default>'owly'</default>
+      <summary>Path to the owly command</summary>
+    </key>
+    <key name="device-name" type="s">
+      <default>''</default>
+      <summary>Name others see</summary>
+      <description>Leave empty to use the host name.</description>
+    </key>
+    <key name="interface" type="s">
+      <default>'awdl0'</default>
+      <summary>Network interface</summary>
+    </key>
+    <key name="receive-directory" type="s">
+      <default>''</default>
+      <summary>Destination for received files</summary>
+      <description>Leave empty to use the Downloads folder.</description>
+    </key>
+    <key name="accept-automatically" type="b">
+      <default>true</default>
+      <summary>Accept incoming transfers without asking</summary>
+    </key>
+    <key name="receive-port" type="i">
+      <range min="1" max="65535"/>
+      <default>8771</default>
+      <summary>Receive port</summary>
+    </key>
+    <key name="send-receiver" type="s">
+      <default>''</default>
+      <summary>Preferred receiver</summary>
+      <description>Name, service ID or address of the receiver. Leave empty to use the first one found.</description>
+    </key>
+    <key name="send-timeout" type="i">
+      <range min="5" max="300"/>
+      <default>30</default>
+      <summary>Seconds to look for a receiver</summary>
+    </key>
+    <key name="send-ble-advert" type="b">
+      <default>true</default>
+      <summary>Wake Apple receivers over Bluetooth LE</summary>
+    </key>
+  </schema>
+</schemalist>

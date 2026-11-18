@@ -1,0 +1,9 @@
+{
+  "uuid": "airdrop@maze404.github.io",
+  "name": "AirGnomeUI",
+  "description": "A Gnome extension frontend for owly to use AirDrop on the Gnome Desktop",
+  "url": "https://github.com/maze404/AirGnomeUI",
+  "shell-version": ["50"],
+  "settings-schema": "org.gnome.shell.extensions.airdrop",
+  "gettext-domain": "airdrop@maze404.github.io"
+}
